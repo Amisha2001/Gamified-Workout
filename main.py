@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import Response,render_template
 import threading
+import jsonpickle
 import cv2
 import pyautogui
 from time import time
@@ -587,7 +588,7 @@ def index():
             game_started = False
             break
 
-        return frame
+        return jsonpickle.encode(frame)
 
     # Release the VideoCapture Object and close the windows.
     camera_video.release()
