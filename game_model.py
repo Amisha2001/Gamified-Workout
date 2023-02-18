@@ -379,8 +379,8 @@ while camera_video.isOpened():
     # Check if frame is not read properly then continue to the next iteration to read the next frame.
     if not ok:
         print("frame not read properly")
-        # continue
-        break
+        continue
+        # break
 
     print("frame read properly")
     # Flip the frame horizontally for natural (selfie-view) visualization.
