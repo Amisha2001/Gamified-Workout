@@ -401,7 +401,7 @@ def index():
         if not ok:
             print("frame not read properly")
             continue
-        print("frame not read properly")
+        print("frame read properly")
         # Flip the frame horizontally for natural (selfie-view) visualization.
         frame = cv2.flip(frame, 1)
 
